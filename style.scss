@@ -69,6 +69,11 @@ body {
       font-size: 24px;
 
       transition: 0.1s;
+
+      #add-task-btn {
+        width: 100%;
+       
+      }
     }
 
     .btn-wrapper:hover {
@@ -88,7 +93,10 @@ body {
 
 .todos-wrapper {
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1;
+  
+ 
 
   .todo-item {
     width: 100%;
@@ -103,15 +111,17 @@ body {
 
     padding: 5px;
 
-   
+    .description {
+      font-weight: 500;
+      font-size: 25px;
+  }
 
     .buttons {
       gap: 20px;
       display: flex;
       align-items: center;
 
-      .description {
-      }
+     
 
       .btn-remove {
         border: 1px solid #800000;
