@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  width: 100%;
+
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(221, 5, 213, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.flex-wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin: auto;
+  padding: 20px;
+
+  border-radius: 10px;
+  border: 5px solid #000;
+  background-color: #f1f1f1;
+
+  .add-todo-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+    .input-wrapper {
+      width: 100%;
+      align-items: center;
+
+      #task {
+        width: 100%;
+        height: 50px;
+
+        font-weight: 300;
+        font-size: 28px;
+        text-align: center;
+      }
+    }
+
+    .btn-wrapper {
+      width: 100px;
+      height: 50px;
+
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+
+      margin: 10px;
+
+      border: 1px solid #000;
+      border-radius: 3px;
+      cursor: pointer;
+
+      background: #641975;
+      color: #fff;
+      font-weight: 300;
+      font-size: 24px;
+
+      transition: 0.1s;
+    }
+
+    .btn-wrapper:hover {
+      transition: 0.2s;
+      color: #641975;
+      background: #fff;
+    }
+  }
+
+  .tasks {
+    font-size: 32px;
+    text-decoration: underline;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+}
+
+.todos-wrapper {
+  width: 100%;
+  display: flex;
+
+  .todo-item {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    font-size: 24px;
+    border-radius: 5px;
+    transition: .1s;
+
+    padding: 5px;
+
+   
+
+    .buttons {
+      gap: 20px;
+      display: flex;
+      align-items: center;
+
+      .description {
+      }
+
+      .btn-remove {
+        border: 1px solid #800000;
+        border-radius: 10px;
+        text-align: center;
+        padding: 3px;
+        background-color: #dc143c;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.1s;
+      }
+
+      .btn-remove:hover {
+        background-color: #fff;
+        color: #dc143c;
+      }
+    }
+  }
+  .todo-item:hover {
+    transition: .1s;
+    background: #641975;
+    color: #fff;
+  }
+  
+}

@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  width: 100%;
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(221, 5, 213) 100%, rgb(0, 212, 255) 100%);
+}
+
+.flex-wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  border: 5px solid #000;
+  background-color: #f1f1f1;
+}
+.flex-wrapper .add-todo-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.flex-wrapper .add-todo-wrapper .input-wrapper {
+  width: 100%;
+  align-items: center;
+}
+.flex-wrapper .add-todo-wrapper .input-wrapper #task {
+  width: 100%;
+  height: 50px;
+  font-weight: 300;
+  font-size: 28px;
+  text-align: center;
+}
+.flex-wrapper .add-todo-wrapper .btn-wrapper {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  cursor: pointer;
+  background: #641975;
+  color: #fff;
+  font-weight: 300;
+  font-size: 24px;
+  transition: 0.1s;
+}
+.flex-wrapper .add-todo-wrapper .btn-wrapper:hover {
+  transition: 0.2s;
+  color: #641975;
+  background: #fff;
+}
+.flex-wrapper .tasks {
+  font-size: 32px;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.todos-wrapper {
+  width: 100%;
+  display: flex;
+}
+.todos-wrapper .todo-item {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+  font-size: 24px;
+  border-radius: 5px;
+  transition: 0.1s;
+  padding: 5px;
+}
+.todos-wrapper .todo-item .buttons {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+.todos-wrapper .todo-item .buttons .btn-remove {
+  border: 1px solid #800000;
+  border-radius: 10px;
+  text-align: center;
+  padding: 3px;
+  background-color: #dc143c;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.todos-wrapper .todo-item .buttons .btn-remove:hover {
+  background-color: #fff;
+  color: #dc143c;
+}
+.todos-wrapper .todo-item:hover {
+  transition: 0.1s;
+  background: #641975;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
