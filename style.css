@@ -116,4 +116,8 @@ body {
   transition: 0.1s;
   background: #641975;
   color: #fff;
+}
+
+.checked {
+  background: #800000;
 }/*# sourceMappingURL=style.css.map */

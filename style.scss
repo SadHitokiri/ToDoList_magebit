@@ -111,6 +111,7 @@ body {
 
     padding: 5px;
 
+   
     .description {
       font-weight: 500;
       font-size: 25px;
@@ -140,6 +141,8 @@ body {
         color: #dc143c;
       }
     }
+
+    
   }
   .todo-item:hover {
     transition: .1s;
@@ -148,3 +151,10 @@ body {
   }
   
 }
+
+.checked {
+  background:#800000;
+}
+
+
+
